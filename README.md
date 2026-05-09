@@ -3,7 +3,7 @@
 ## 📌 Description
 This project implements a **6-bit comparator** in Verilog that supports both **signed (2’s complement)** and **unsigned** number comparison.
 
-The design is fully **structural**, built using basic logic gates from a predefined library, and is verified using a behavioral reference model.
+The design is fully **structural**, built using basic logic gates, and verified using a behavioral model for correctness.
 
 A synchronous version is also implemented using clocked registers.
 
@@ -11,40 +11,39 @@ A synchronous version is also implemented using clocked registers.
 
 ## ⚙️ Features
 
-- 6-bit input operands (A, B)
+- 6-bit inputs: A, B
 - Mode selection:
-  - `S = 0` → Unsigned comparison
-  - `S = 1` → Signed comparison
+  - S = 0 → Unsigned comparison
+  - S = 1 → Signed comparison
 - Outputs:
-  - `GT` → A > B
-  - `EQ` → A = B
-  - `LW` → A < B
+  - GT → A > B
+  - EQ → A = B
+  - LW → A < B
+- Clocked synchronous outputs
 
 ---
 
-## 🧱 Modules Description
+## 🧱 Modules Overview
 
-### 1️⃣ Unsigned Comparator (Structural)
-- Built using logic gates (AND, OR, XOR, XNOR, NOT)
-- Performs bit-level magnitude comparison
-- Generates GT, EQ, LW signals
+### 1️⃣ Unsigned Comparator
+- Structural gate-level design
+- Bitwise comparison logic
+- Produces GT, EQ, LW
 
 ---
 
 ### 2️⃣ Signed Comparator
-- Uses MSB (sign bit) interpretation
+- Uses 2’s complement logic
+- MSB-based sign detection
 - Handles:
-  - Positive vs Negative cases
-  - Same-sign comparison using unsigned logic
-- Combines results into final signed output
+  - Positive vs negative cases
+  - Same-sign comparison
 
 ---
 
 ### 3️⃣ Multiplexer (2×1)
-- Selects between:
-  - Signed result
-  - Unsigned result
-- Controlled by input `S`
+- Selects between signed and unsigned outputs
+- Controlled by signal S
 
 ---
 
@@ -52,54 +51,52 @@ A synchronous version is also implemented using clocked registers.
 - Integrates:
   - Signed comparator
   - Unsigned comparator
-  - MUX selection logic
-- Adds **clocked registers** for synchronous output
+  - MUX selection
+- Adds clocked registers for synchronization
 
 ---
 
 ### 5️⃣ Behavioral Model
-- Implements the same functionality using high-level Verilog
-- Serves as a **golden reference model**
-- Used for verification comparison
+- High-level Verilog implementation
+- Acts as golden reference model
+- Used for validation
 
 ---
 
 ### 6️⃣ Testbench
 - Exhaustive input testing
 - Compares structural vs behavioral outputs
-- Automatically detects mismatches
-- Stops simulation on failure
+- Automatic FAIL detection
+- Stops simulation on mismatch
 
 ---
 
 ## ⏱️ Clocking
-- Synchronous design using `posedge CLK`
-- Outputs are registered
-- Ensures stable and timed outputs
+- Positive edge triggered system
+- Outputs registered for stability
+- Synchronous operation
 
 ---
 
 ## 🧪 Verification Strategy
 
-- Structural model is compared against behavioral model
-- All input combinations are tested
-- Automatic check:
+- Structural model compared with behavioral model
+- Full input space testing
+- Automatic error detection:
 
 ```verilog
 if (GT != sGT || EQ != sEQ || LW != sLW)
     $display("FAIL");
 
-    Simulation stops on mismatch
 
-    📊 Key Concepts Used
+📊 Concepts Used
 Structural Verilog design
 Behavioral modeling
 Signed vs unsigned arithmetic (2’s complement)
 Digital comparator design
 Multiplexer design
-Clocked sequential circuits
-Functional verification
-Exhaustive testbench simulation
+Clocked sequential systems
+Hardware verification techniques
 
 📁 Project Structure
 comparator-project/
@@ -111,21 +108,3 @@ comparator-project/
 ├── mux.v
 ├── testbench.v
 └── README.md
-
-🚀 How to Run
-
-Using Icarus Verilog:
-
-iverilog -o sim testbench.v
-vvp sim
-
-Optional waveform viewing:
-
-gtkwave dump.vcd
-🎯 Learning Outcomes
-Designing hardware using structural Verilog
-Understanding signed vs unsigned binary representation
-Building combinational and sequential systems
-Verification using behavioral models
-Debugging hardware logic designs
-Working with clocked systems
