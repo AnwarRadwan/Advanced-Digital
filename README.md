@@ -89,22 +89,3 @@ if (GT != sGT || EQ != sEQ || LW != sLW)
     $display("FAIL");
 
 
-📊 Concepts Used
-Structural Verilog design
-Behavioral modeling
-Signed vs unsigned arithmetic (2’s complement)
-Digital comparator design
-Multiplexer design
-Clocked sequential systems
-Hardware verification techniques
-
-📁 Project Structure
-comparator-project/
-│
-├── unsignedm.v
-├── signedm.v
-├── structural.v
-├── behavioral.v
-├── mux.v
-├── testbench.v
-└── README.md
