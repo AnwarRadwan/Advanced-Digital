@@ -1,0 +1,131 @@
+timestamp=1735336550878
+
+[~A]
+C:/Users/al-manar-pc/Desktop/CE_3.1/ENCS3310-ADVACED/Project/Project/Project/src/main.v=0*69734*71990
+LastVerilogToplevel=test
+ModifyID=163
+Version=74
+
+[~MFT]
+0=11|0Project.mgf|71990|42280
+1=14|1Project.mgf|278851|248246
+2=0|2Project.mgf|9058|0
+3=28|3Project.mgf|164574|145339
+
+[$root]
+A/$root=22|||1*264712
+BinW64/$root=3*155696
+SLP=3*155811
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92163304b95f34bb4dd9cb746dc3cf853096
+
+[Signed]
+A/Signed=22|../src/main.v|63|1*422
+BinW64/Signed=3*183
+NSymbols/signed=NSymbols/Signed 40|0|2*4682
+R=../src/main.v|63
+SLP=3*299
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5ab506d0139fc3470dba47b01517362b5c1108cecb878758328d396b6a8c9750
+
+[behavioral]
+A/behavioral=22|../src/main.v|129|1*277173
+BinW64/behavioral=3*160405
+NSymbols/behavioral=40|0|2*1844
+R=../src/main.v|129
+SLP=3*161549
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff459b16c5337d3d6d5c4ebe71c96bd73e4
+
+[behavioral_comparator]
+A/behavioral_comparator=22|../src/main.v|129|1*9722
+BinW64/behavioral_comparator=3*3536
+R=../src/main.v|129
+SLP=3*4336
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|022cd8df7a5c43de212aeed08e6049544130bb18eeff146330c75995a7b1b6903c40caefbad5629f0347205066b611b0
+
+[clocked_comparator]
+A/clocked_comparator=22|../src/main.v|129|1*11163
+BinW64/clocked_comparator=3*4901
+R=../src/main.v|129
+SLP=3*5642
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ee059062e0865ca92044aecc995c164bb7c4d14546ff3734428fee397942aef7bb6eb8e0a39e30b8aa5e16d9175c4dab
+
+[comparator]
+A/comparator=22|../src/main.v|129|1*12704
+BinW64/comparator=3*6205
+R=../src/main.v|129
+SLP=3*7208
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|380097b371b0850258ab7f532461b4d79a5f0fe3076e657a3a0f29edf58bad2fd4699c368a3adf386c698d502d54f939
+
+[mux2X1]
+A/mux2X1=22|../src/main.v|91|1*273280
+BinW64/mux2X1=3*159176
+NSymbols/mux2x1=NSymbols/mux2X1 40|0|2*0
+R=../src/main.v|91
+SLP=3*159684
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|6df14bb82a9a0c4ab5f00cd0db4d023b18c16e3c4191ef89f61b0f9fd0342c7e
+
+[signedBeh]
+A/signedBeh=22|../src/main.v|129|1*16042
+BinW64/signedBeh=3*8628
+R=../src/main.v|129
+SLP=3*9297
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|51ce99daf6cde1893cee49b2d694cfc992beaecccce5adc504aa2732ad6466c9ad69c5f7688bb0ec191c78a37aabe56f
+
+[signedm]
+A/signedm=22|../src/main.v|63|1*270602
+BinW64/signedm=3*158283
+NSymbols/signedm=40|0|2*6868
+R=../src/main.v|63
+SLP=3*158887
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|69a0598523caa46d4da7a961bee6693d26527262ddaa47cb266f3a3c4d9b973a4453bff2d007c873c68e269296e0b88a
+
+[structural]
+A/structural=22|../src/main.v|103|1*274762
+BinW64/structural=3*159792
+R=../src/main.v|103
+SLP=3*160152
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb8a8c5a6219c8134e3cb0700db7e3bbd1
+
+[test]
+A/test=22|../src/main.v|202|1*278851
+BinW64/test=3*162532
+R=../src/main.v|202
+SLP=3*164574
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e1f76c805e2c0a9a3d36a8be8882f206c85e1a59a1cf5f12409bdcdbdd2d7f8e
+
+[testbench]
+A/testbench=22|../src/main.v|184|1*24620
+BinW64/testbench=3*14017
+R=../src/main.v|184
+SLP=3*15589
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79136cc285a7c0d990935d70857a4fc841ea
+
+[unSignedBeh]
+A/unSignedBeh=22|../src/main.v|129|1*26484
+BinW64/unSignedBeh=3*16532
+R=../src/main.v|129
+SLP=3*17203
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e2bbf9d92bb95e32ae0dbb9540601475a5a36b2bb94130aed081bac4a26861d70d6af68ab2a4c13ad6fc67bdc74e5c20
+
+[unsignedm]
+A/unsignedm=22|../src/main.v|1|1*265134
+BinW64/unsignedm=3*155879
+NSymbols/unsignedm=40|0|2*9058
+R=../src/main.v|1
+SLP=3*157241
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e9bf8b5cab803e1e9cd285eb738d5005e2c2a0e3cfa45d8b8aca422b22670e7109569d8d1e1a920d962b18bd1be6a141
+
+[~U]
+$root=12|0*68118|
+Signed=12|0*3070||0x3
+behavioral=12|0*69295||0x3
+behavioral_comparator=12|0*3521||0x10
+clocked_comparator=12|0*3782|
+comparator=12|0*4047|
+mux2X1=12|0*68824||0x3
+signedBeh=12|0*4482|
+signedm=12|0*68599||0x3
+structural=12|0*69022|
+test=12|0*69533||0x10
+testbench=12|0*5402||0x10
+unSignedBeh=12|0*5578||0x10
+unsignedm=12|0*68380||0x3
